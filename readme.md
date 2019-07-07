@@ -14,13 +14,11 @@ Projekt zaliczeniowy WSPA.
 
 ### Wymagania
 
-Composer
-PHP >= 7.1.3
-SQL DB
+* Composer
+* PHP >= 7.1.3
+* SQL DB
 
 ### Instalacja
-
-Instalacja: 
 
 ```
 git clone https://github.com/Mvrxel/WSPA-project.git
