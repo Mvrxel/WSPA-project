@@ -18,4 +18,8 @@ class CrudController extends Controller {
         return view('home',['posts' => $posts]);
     }
 
+    public function admin() {
+        $posts = $this->postsRepository->getAll();
+        return view('admin',['posts' => $posts]);
+    }
 }

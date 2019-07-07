@@ -13,8 +13,6 @@
     <title>BlogCRUD</title>
 </head>
 <body>
-    Blog: <br>
-
   <!--Main Navigation-->
   <header>
 

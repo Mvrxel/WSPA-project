@@ -15,7 +15,9 @@ Route::get('/', [
     'uses' => 'Crud\CrudController@index',
     'as' => 'index'
 ]);
-
+Route::get('/admin', [
+    'uses' => 'Crud\CrudController@admin',
+    'as' => 'admin'
+]);
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
