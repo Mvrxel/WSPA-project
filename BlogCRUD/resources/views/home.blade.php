@@ -24,7 +24,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-          <strong class="blue-text">MDB</strong>
+          <strong class="blue-text">BlogCRUD</strong>
         </a>
 
         <!-- Collapse -->
@@ -88,17 +88,13 @@
         <div class="card-body text-white text-center py-5 px-5 my-5">
 
           <h1 class="mb-4">
-            <strong>Learn Bootstrap 4 with MDB</strong>
+            <strong>Blog CRUD</strong>
           </h1>
           <p>
-            <strong>Best & free guide of responsive web design</strong>
+            <strong>Simple CRUD project made with PHP and Laravel</strong>
           </p>
-          <p class="mb-4">
-            <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written
-              versions available. Create your own, stunning website.</strong>
-          </p>
-          <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-            free tutorial
+          <a target="_blank" href="https://github.com/Mvrxel/WSPA-project" class="btn btn-outline-white btn-lg">Start
+            Public repository
             <i class="fas fa-graduation-cap ml-2"></i>
           </a>
 
