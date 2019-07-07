@@ -113,12 +113,13 @@
         <div class="row text-left">
 
           <!--Grid column-->
+          @foreach($posts as $post)
           <div class="col-lg-6 col-md-12">
 
             <!--Image-->
             <div class="view overlay rounded z-depth-1-half mb-3">
-              <img src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" class="img-fluid" alt="Sample post image">
-              <a>
+              <img src="{{ $post->img_link }}" class="img-fluid" alt="Sample post image">
+              <a href="/post/{{ $post->id }}">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -128,230 +129,26 @@
               <a href="" class="light-blue-text">
                 <h6>
                   <i class="fas fa-plane"></i>
-                  <strong> Travels</strong>
+                  <strong>{{ $post->category }}</strong>
                 </h6>
               </a>
-              <p>
-                <strong>
-                  <i class="far fa-clock"></i> 20/08/2018</strong>
-              </p>
             </div>
             <h3>
               <a>
-                <strong>This is title of the news</strong>
+                <strong>{{ $post->title }}</strong>
               </a>
             </h3>
-            <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+            <p> 
+              {{ $post->text }}
             </p>
 
             <!--/Featured news-->
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-3">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/photo8.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>19/08/2018</strong>
-                </p>
-                <a>Lorem ipsum dolor sit amet
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-3">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/54.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>18/08/2018</strong>
-                </p>
-                <a>Soluta nobis est eligendi
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-3">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>17/08/2018</strong>
-                </p>
-                <a>Voluptatem accusantium doloremque
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
+            
           </div>
           <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
-
-            <!--Image-->
-            <div class="view overlay rounded z-depth-1-half mb-3">
-              <img src="https://mdbootstrap.com/img/Photos/Others/images/32.jpg" class="img-fluid" alt="Sample post image">
-              <a>
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!--Excerpt-->
-            <div class="news-data">
-              <a href="" class="light-blue-text">
-                <h6>
-                  <i class="fas fa-plane"></i>
-                  <strong> Travels</strong>
-                </h6>
-              </a>
-              <p>
-                <strong>
-                  <i class="far fa-clock"></i> 20/08/2018</strong>
-              </p>
-            </div>
-            <h3>
-              <a>
-                <strong>This is title of the news</strong>
-              </a>
-            </h3>
-            <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-              placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-            </p>
-
-            <!--/Featured news-->
-
+          @endforeach
+           </div>
             <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-3">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/photo11.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>19/08/2018</strong>
-                </p>
-                <a>Lorem ipsum dolor sit amet
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-3">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/51.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>18/08/2018</strong>
-                </p>
-                <a>Soluta nobis est eligendi
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
-
-            <hr>
-
-            <!--Small news-->
-            <div class="row">
-              <div class="col-md-3">
-
-                <!--Image-->
-                <div class="view overlay rounded z-depth-1">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/44.jpg" class="img-fluid" alt="Minor sample post image">
-                  <a>
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-              </div>
-
-              <!--Excerpt-->
-              <div class="col-md-9">
-                <p class="dark-grey-text">
-                  <strong>17/08/2018</strong>
-                </p>
-                <a>Voluptatem accusantium doloremque
-                  <i class="fas fa-angle-right float-right"></i>
-                </a>
-              </div>
-
-            </div>
-            <!--/Small news-->
 
           </div>
           <!--Grid column-->
