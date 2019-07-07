@@ -11,5 +11,5 @@ class Posts extends Model
 
     public $timestamps = false;
 
-    protected $fillable = ['title','author_id','text'];
+    protected $fillable = ['title','author_id','text','category','img_link'];
 }

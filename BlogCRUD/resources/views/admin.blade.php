@@ -77,8 +77,8 @@
   <main class="mt-5 pt-5">
     <div class="container">
 
-        <form class="text-center border border-light p-5">
-
+        <form method="POST" action="{{ route('admin.store.post') }}" class="text-center border border-light p-5">
+        {{ csrf_field() }}
         <p class="h4 mb-4">Add post</p>
 
         <input type="text" name="title" id="" class="form-control mb-4" placeholder="Title">
@@ -88,15 +88,17 @@
         <input type="text" name="img_link" id="" class="form-control mb-4" placeholder="Image URL">
 
         <div class="md-form">
-            <textarea id="form7" class="md-textarea form-control" rows="4"></textarea>
-            <label for="form7">Material textarea</label>
+            <textarea id="form7" name="text" class="md-textarea form-control" rows="4"></textarea>
+            <label for="form7">Text</label>
         </div>
 
         <button class="btn btn-info btn-block" type="submit">Add post</button>
 
 
         </form>
-
+        <div class="text-center mt-5">
+            <h4>Posts:</h4>
+        </div>
         <table class="table">
             <thead>
                 <tr>
@@ -107,12 +109,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                </tr>
+                @foreach($posts as $post)
+                    <tr>
+                    <th scope="row">{{ $post->id }}</th>
+                    <td>{{ $post->title }}</td>
+                    <td>{{ $post->category }}</td>
+                    <td><button type="button" class="btn btn-sm btn-danger">Delete</button></td>
+                    </tr>
+                @endforeach
             </tbody>
         </table>
     </div>

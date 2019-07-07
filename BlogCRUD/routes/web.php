@@ -19,5 +19,9 @@ Route::get('/admin', [
     'uses' => 'Crud\CrudController@admin',
     'as' => 'admin'
 ]);
+Route::post('/admin/post/store', [
+    'uses' => 'Crud\CrudController@storePost',
+    'as' => 'admin.store.post'
+]);
 Auth::routes();
 
