@@ -23,6 +23,11 @@ class CrudController extends Controller {
         return view('admin',['posts' => $posts]);
     }
 
+    public function showPost($id) {
+        $post = $this->postsRepository->find($id);
+        return view('post',['post' => $post]);
+    }
+
     public function storePost(Request $request) {
         $text = $request->text;
         $title = $request->title;

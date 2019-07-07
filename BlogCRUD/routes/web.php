@@ -19,6 +19,10 @@ Route::get('/admin', [
     'uses' => 'Crud\CrudController@admin',
     'as' => 'admin'
 ]);
+Route::get('/post/{id}', [
+    'uses' => 'Crud\CrudController@showPost',
+    'as' => 'show.post'
+]);
 Route::post('/admin/post/store', [
     'uses' => 'Crud\CrudController@storePost',
     'as' => 'admin.store.post'
