@@ -45,4 +45,6 @@ class CrudController extends Controller {
 
         return redirect()->back();
     }
+
+    // TODO: Remove post function
 }

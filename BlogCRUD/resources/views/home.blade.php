@@ -21,7 +21,7 @@
       <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+        <a class="navbar-brand waves-effect" href="/" target="_blank">
           <strong class="blue-text">BlogCRUD</strong>
         </a>
 
@@ -37,12 +37,12 @@
           <!-- Left -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link waves-effect" href="#">Home
+              <a class="nav-link waves-effect" href="/">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">Admin panel</a>
+              <a class="nav-link waves-effect" href="/admin" target="_blank">Admin panel</a>
             </li>
           </ul>
 
