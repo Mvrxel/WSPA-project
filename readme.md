@@ -1,6 +1,6 @@
 # BlogCRUD
 
-Prostu CRUD napisany w PHP i Laravelu.
+Prosty CRUD napisany w PHP i Laravelu. Blog pozwala na wypisanie wszystkich postów, wyświetlenie detali postu oraz tworzenie.
 
 ## Projekt
 
@@ -25,7 +25,7 @@ git clone https://github.com/Mvrxel/WSPA-project.git
 ```
 
 ```
-cd WSPA-project
+cd BlogCRUD
 ```
 
 ```
